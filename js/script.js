@@ -40,7 +40,7 @@ $(function() {
                 self.removeColumn();
             });
             $columnAddCard.click(function() {
-                self.addCard(new Card(prompt('Enter the name of the card')));
+                self.addCard(new Card(prompt('Enter the description of the card')));
             });
 
             // construction column element
@@ -123,4 +123,17 @@ $(function() {
         var column = new Column(name);
         board.addColumn(column);
     });
+
+    // creating default kanban
+    var todoColumn = new Column('To do');
+    var doingColumn = new Column('Doing');
+    var doneColumn = new Column('Done');
+    var card1 = new Card('New task');
+    var card2 = new Card('Add style for my kanban');
+
+    board.addColumn(todoColumn);
+    board.addColumn(doingColumn);
+    board.addColumn(doneColumn);
+    todoColumn.addCard(card1);
+    doingColumn.addCard(card2);
 });
