@@ -40,7 +40,15 @@ $(function() {
                 self.removeColumn();
             });
             $columnAddCard.click(function() {
-                self.addCard(new Card(prompt('Enter the description of the card')));
+                var text;
+
+                text = prompt('Enter the description of the card');
+
+                if (!text) {
+                    return 0;
+                }
+
+                self.addCard(new Card(text));
             });
 
             // construction column element
@@ -106,6 +114,11 @@ $(function() {
 
     $('.btn-create-column').click(function() {
         var name = prompt('Enter a column name');
+
+        if (!name) {
+            return 0;
+        }
+
         var column = new Column(name);
         board.addColumn(column);
     });
