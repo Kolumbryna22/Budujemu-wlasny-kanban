@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-create,
+.btn-create-column {
+  background-color: green;
+  color: #f7f7f7;
+  border: 2px solid green;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 8px;
+}
+
+.btn-create:hover,
+.btn-create-column:hover {
+  background-color: #f7f7f7;
+  border: 2px solid green;
+  color: green;
+}
+
+.btn-delete {
+  background-color: #f58220;
+  color: #f7f7f7;
+  border: 2px solid #f58220;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 8px;
+  font-size: 20px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.btn-delete:hover {
+  background-color: #f7f7f7;
+  border: 2px solid #f58220;
+  color: #f58220;
+}
+
+.board {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.board > button {
+  margin-bottom: 40px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  border-top: 1px solid grey;
+}
+
+.column {
+  position: relative;
+  min-width: 250px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  min-height: 500px;
+  background-color: white;
+}
+
+.column > .btn-delete {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+}
+
+.column-card-list {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.card {
+  list-style-type: none;
+  width: 200px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 20px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

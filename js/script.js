@@ -33,7 +33,7 @@ $(function() {
             var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
             var $columnCardList = $('<ul>').addClass('column-card-list');
             var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-            var $columnAddCard = $('<button>').addClass('btn-add').text('Add a card');
+            var $columnAddCard = $('<button>').addClass('btn-create').text('Add a card');
 
             // adding events
             $columnDelete.click(function() {
@@ -48,15 +48,6 @@ $(function() {
                     .append($columnDelete)
                     .append($columnAddCard)
                     .append($columnCardList);
-
-            // methods for column  // nie wiem dlaczego tą metodą nie działa
-            // this.addCard = function(card) {
-            //     this.$element.children('ul').append(card.$element);
-            // };
-
-            // this.removeColumn = function() {
-            //     this.$element.remove();
-            // };
 
             return $column;
         };
@@ -94,11 +85,6 @@ $(function() {
             $card.append($cardDelete)
                 .append($cardDescription);
 
-            // methods for card
-            // this.removeCard = function() {
-            //     this.$element.remove();
-            // };
-
             return $card;
         };
     };
@@ -118,7 +104,7 @@ $(function() {
         $element: $('#board .column-container'),
     };
 
-    $('.create-column').click(function() {
+    $('.btn-create-column').click(function() {
         var name = prompt('Enter a column name');
         var column = new Column(name);
         board.addColumn(column);

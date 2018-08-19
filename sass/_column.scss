@@ -1,0 +1,26 @@
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-top: 1px solid grey;
+}
+
+.column {
+    position: relative;
+    min-width: 250px;
+    border: 1px solid grey;
+    border-radius: $border-radius;
+    min-height: 500px;
+    background-color: $color-column;
+
+    &>.btn-delete {
+        position: absolute;
+        top: 6px;
+        right: 5px;
+    }
+}
+
+.column-card-list {
+    @include clear-mp;
+    height: 100%;
+}

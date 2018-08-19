@@ -1,0 +1,10 @@
+.board {
+    text-align: center;
+    background-color: $color-background;
+    padding: 20px;
+    min-height: 100vh;
+
+    &>button {
+        margin-bottom: 40px;
+    }
+}
