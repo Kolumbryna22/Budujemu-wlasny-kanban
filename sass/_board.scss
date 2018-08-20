@@ -1,10 +1,27 @@
 .board {
     text-align: center;
     background-color: $color-background;
-    padding: 20px;
+    padding: 0 20px 20px;
     min-height: 100vh;
 
     &>button {
+        margin-top: 30px;
         margin-bottom: 40px;
+    }
+}
+
+.logo {
+    position: relative;
+	border-top: 80px solid $color-card-background;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+    width: 200px;
+    margin: 0 auto;
+
+    h2 {
+        @include clear-mp;
+        position: absolute;
+        bottom: 10px;
     }
 }
