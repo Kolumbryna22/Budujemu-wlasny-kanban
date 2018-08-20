@@ -40,9 +40,7 @@ $(function() {
                 self.removeColumn();
             });
             $columnAddCard.click(function() {
-                var text;
-
-                text = prompt('Enter the description of the card');
+                var text = prompt('Enter the description of the card');
 
                 if (!text) {
                     return 0;
