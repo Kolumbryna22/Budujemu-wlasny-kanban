@@ -14,3 +14,10 @@
         right: 5px;
     }
 }
+
+.card-placeholder {
+    border: 3px dashed $color-dark;
+    border-radius: $border-radius;
+    list-style-type: none;
+    height: 60px;
+}

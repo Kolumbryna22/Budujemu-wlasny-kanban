@@ -129,4 +129,11 @@ body {
   right: 5px;
 }
 
+.card-placeholder {
+  border: 3px dashed grey;
+  border-radius: 3px;
+  list-style-type: none;
+  height: 60px;
+}
+
 /*# sourceMappingURL=style.css.map */
