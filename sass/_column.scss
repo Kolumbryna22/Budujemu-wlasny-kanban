@@ -27,6 +27,14 @@
     }
 }
 
+.column-placeholder {
+    border: 3px dashed $color-dark;
+    border-radius: $border-radius;
+    list-style-type: none;
+    height: 500px;
+    width: 250px;
+}
+
 .column-card-list {
     @include clear-mp;
     height: 100%;
