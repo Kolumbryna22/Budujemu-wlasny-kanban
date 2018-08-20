@@ -68,7 +68,9 @@ body {
 .column {
   position: relative;
   margin: 30px 10px;
-  min-width: 250px;
+  padding: 20px;
+  max-width: 250px;
+  width: 100%;
   box-shadow: 1px 1px 1px 2px grey;
   min-height: 500px;
   background-color: white;
@@ -80,6 +82,10 @@ body {
   right: 5px;
 }
 
+.column .btn-create {
+  margin-bottom: 30px;
+}
+
 .column-card-list {
   margin: 0;
   padding: 0;
@@ -89,11 +95,11 @@ body {
 .card {
   position: relative;
   list-style-type: none;
-  width: 200px;
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
   background-color: lightgrey;
   border-radius: 3px;
-  margin: 20px auto;
   word-wrap: break-word;
 }
 
