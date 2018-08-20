@@ -13,10 +13,10 @@ $(function() {
         return str;
     };
 
-    function initSortable() {
-        $('.column-card-list').sortable({
-            connectWith: '.column-card-list',
-            placeholder: 'card-placeholder'
+    function initSortable(element, placeholder) {
+        $(element).sortable({
+            connectWith: element,
+            placeholder: placeholder
         }).disableSelection();
     };
 
@@ -107,7 +107,8 @@ $(function() {
         name: 'Kanban Board',
         addColumn: function(column) {
             this.$element.append(column.$element);
-            initSortable();
+            initSortable('.column-card-list', 'card-placeholder');
+            initSortable('.column-container', 'column-placeholder');
         },
         $element: $('#board .column-container'),
     };
