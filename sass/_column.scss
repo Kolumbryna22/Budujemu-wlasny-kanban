@@ -1,5 +1,6 @@
 .column-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 20px;
     border-top: 1px solid grey;
@@ -7,6 +8,7 @@
 
 .column {
     position: relative;
+    margin: 30px 10px;
     min-width: 250px;
     box-shadow: 1px 1px 1px 2px grey;
     min-height: 500px;
