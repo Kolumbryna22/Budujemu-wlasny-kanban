@@ -39,21 +39,20 @@ $(function() {
             $columnDelete.click(function() {
                 self.removeColumn();
             });
+
             $columnAddCard.click(function() {
                 var text = prompt('Enter the description of the card');
 
-                if (!text) {
-                    return 0;
+                if (text) {
+                    self.addCard(new Card(text));
                 }
-
-                self.addCard(new Card(text));
             });
 
             // construction column element
             $column.append($columnTitle)
-                    .append($columnDelete)
-                    .append($columnAddCard)
-                    .append($columnCardList);
+                .append($columnDelete)
+                .append($columnAddCard)
+                .append($columnCardList);
 
             return $column;
         };
@@ -114,12 +113,10 @@ $(function() {
     $('.btn-create-column').click(function() {
         var name = prompt('Enter a column name');
 
-        if (!name) {
-            return 0;
+        if (name) {
+            var column = new Column(name);
+            board.addColumn(column);
         }
-
-        var column = new Column(name);
-        board.addColumn(column);
     });
 
     // creating default kanban
