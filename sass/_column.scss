@@ -9,12 +9,8 @@
 .column {
     position: relative;
     margin-bottom: 30px;
-    padding: 20px;
     max-width: 250px;
     width: 100%;
-    box-shadow: 1px 1px 1px 2px $color-dark;
-    min-height: 500px;
-    background-color: $color-column;
 
     .btn-create {
         margin-bottom: 30px;
@@ -25,13 +21,25 @@
     border: 3px dashed $color-dark;
     border-radius: $border-radius;
     list-style-type: none;
-    height: 500px;
+    height: 400px;
     width: 250px;
 }
 
 .column-card-list {
     @include clear-mp;
-    height: 100%;
+    min-height: 10px;
+}
+
+.column-title {
+    @include clear-mp;
+    width: 100%;
+    padding: 5px 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $color-dark;
+    background-color: $color-title;
+    border-radius: $border-radius;
+    box-shadow: 1px 1px 1px 2px $color-dark;
+    word-wrap: break-word;
 }
 
 @media (max-width: 600px) {

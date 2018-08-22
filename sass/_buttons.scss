@@ -1,10 +1,10 @@
 .btn-create,
 .btn-create-column {
-    @include button-style($color-btn-add, $color-background, 3px);
+    @include button-style($color-btn-add, $color-primary, 3px);
 }
 
 .btn-delete {
-    @include button-style($color-btn-delete, $color-background, 3px);
+    @include button-style($color-btn-delete, $color-primary, 3px);
     font-size: 18px;
     padding: 0;
     width: 25px;

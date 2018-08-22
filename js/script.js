@@ -51,8 +51,8 @@ $(function() {
             // construction column element
             $column.append($columnTitle)
                 .append($columnDelete)
-                .append($columnAddCard)
-                .append($columnCardList);
+                .append($columnCardList)
+                .append($columnAddCard);
 
             return $column;
         };

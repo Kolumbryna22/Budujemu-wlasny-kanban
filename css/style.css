@@ -12,7 +12,7 @@ body {
 .btn-create,
 .btn-create-column {
   background-color: green;
-  color: #f7f7f7;
+  color: white;
   border: 2px solid green;
   border-radius: 3px;
   cursor: pointer;
@@ -22,14 +22,14 @@ body {
 
 .btn-create:hover,
 .btn-create-column:hover {
-  background-color: #f7f7f7;
+  background-color: white;
   border: 2px solid green;
   color: green;
 }
 
 .btn-delete {
   background-color: #f58220;
-  color: #f7f7f7;
+  color: white;
   border: 2px solid #f58220;
   border-radius: 3px;
   cursor: pointer;
@@ -46,14 +46,14 @@ body {
 }
 
 .btn-delete:hover {
-  background-color: #f7f7f7;
+  background-color: white;
   border: 2px solid #f58220;
   color: #f58220;
 }
 
 .board {
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #b2d9e6;
   padding: 0 20px 20px;
   min-height: 100vh;
 }
@@ -65,7 +65,7 @@ body {
 
 .logo {
   position: relative;
-  border-top: 80px solid lightgrey;
+  border-top: 80px solid white;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: 0;
@@ -91,12 +91,8 @@ body {
 .column {
   position: relative;
   margin-bottom: 30px;
-  padding: 20px;
   max-width: 250px;
   width: 100%;
-  box-shadow: 1px 1px 1px 2px grey;
-  min-height: 500px;
-  background-color: white;
 }
 
 .column .btn-create {
@@ -105,16 +101,29 @@ body {
 
 .column-placeholder {
   border: 3px dashed grey;
-  border-radius: 3px;
+  border-radius: 5px;
   list-style-type: none;
-  height: 500px;
+  height: 400px;
   width: 250px;
 }
 
 .column-card-list {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 10px;
+}
+
+.column-title {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 5px 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid grey;
+  background-color: #9ece9e;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 2px grey;
+  word-wrap: break-word;
 }
 
 @media (max-width: 600px) {
@@ -129,19 +138,21 @@ body {
 .card {
   position: relative;
   list-style-type: none;
-  width: 100%;
+  width: 90%;
   padding: 15px;
-  margin-bottom: 20px;
-  background-color: lightgrey;
-  border-radius: 3px;
+  margin: 0 auto 20px;
+  background-color: white;
+  border-radius: 5px;
   word-wrap: break-word;
 }
 
 .card-placeholder {
   border: 3px dashed grey;
-  border-radius: 3px;
+  border-radius: 5px;
   list-style-type: none;
   height: 60px;
+  width: 85%;
+  margin: 0 auto 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
