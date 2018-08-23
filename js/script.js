@@ -112,9 +112,10 @@ $(function() {
 
     $('.btn-create-column').click(function() {
         var name = prompt('Enter a column name');
+        var column;
 
         if (name) {
-            var column = new Column(name);
+            column = new Column(name);
             board.addColumn(column);
         }
     });
