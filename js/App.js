@@ -12,12 +12,11 @@ $.ajax({
     url: baseUrl + '/board',
     method: 'GET',
     success: function(response) {
-        setupColumns(response.comlumns);
+        setupColumns(response.columns);
     }
 });
 
 function setupColumns(columns) {
-    console.log(columns);
     columns.forEach(function(column){
         var col = new Column(column.id, column.name);
         board.createColumn(col);
