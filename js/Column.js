@@ -15,7 +15,7 @@ function Column(id, name) {
 
         // adding events
         $columnDelete.click(function() {
-            self.removeColumn();
+            self.deleteColumn();
         });
 
         $columnAddCard.click(function(event) {
