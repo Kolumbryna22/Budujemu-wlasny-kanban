@@ -59,8 +59,13 @@ Column.prototype = {
         $.ajax({
             url: baseUrl + '/column/' + self.id,
             method: 'DELETE',
+<<<<<<< HEAD
             success: function() {
                 self.element.remove();
+=======
+            success: function(response) {
+                self.$element.remove();
+>>>>>>> bc670ec58af4c390406a3e2feed277f04a7fc4e5
             }
         });
     },
