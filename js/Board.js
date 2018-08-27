@@ -2,17 +2,25 @@ var board = {
     name: 'Kanban Board',
     createColumn: function(column) {
         this.$element.append(column.$element);
-        initSortable('.column-card-list', 'card-placeholder');
-        initSortable('.column-container', 'column-placeholder');
+        initSortable(this, '/card/', '.column-card-list', 'card-placeholder');
+        initSortable(this, '/column/', '.column-container', 'column-placeholder');
     },
     $element: $('#board .column-container'),
 };
 
-function initSortable(element, placeholder) {
+function initSortable(element, type, element, placeholder) {
     $(element).sortable({
         connectWith: element,
         placeholder: placeholder
     }).disableSelection();
+
+    $.ajax({
+        url: baseUrl + type + element.id,
+        method: 'PUT',
+        success: function(response) {
+            element.id = response.id;
+        }
+    })
 };
 
 $('.btn-create-column').click(function() {
