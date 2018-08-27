@@ -60,7 +60,7 @@ Column.prototype = {
             url: baseUrl + '/column/' + self.id,
             method: 'DELETE',
             success: function(response) {
-                self.element.remove();
+                self.$element.remove();
             }
         });
     },
